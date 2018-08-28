@@ -60,7 +60,7 @@ func (s *Session) Start() {
   s.InitThreads()
   s.InitGithubAccessToken()
   s.InitGithubClient()
-  s.InitRouter()
+  //s.InitRouter()
 }
 
 func (s *Session) Finish() {
