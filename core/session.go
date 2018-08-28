@@ -153,7 +153,7 @@ func (s *Session) InitRouter() {
   s.Router = NewRouter(s)
   go func(sess *Session) {
     if err := sess.Router.Run(bind); err != nil {
-      sess.Out.Fatal("Error when starting web server: %s\n", err)
+      sess.Out.Fatal("Error when starting web server1: %s\n", err)
     }
   }(s)
 }
